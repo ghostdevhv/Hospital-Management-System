@@ -1,0 +1,233 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.1  0.1  33936  4348 ?        Ss   Sep01   0:01 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    Sep01   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    Sep01   0:00 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    Sep01   0:00 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    Sep01   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    Sep01   0:00 [migration/0]
+root        10  0.0  0.0      0     0 ?        S    Sep01   0:00 [watchdog/0]
+root        11  0.0  0.0      0     0 ?        S    Sep01   0:00 [watchdog/1]
+root        12  0.0  0.0      0     0 ?        S    Sep01   0:00 [migration/1]
+root        13  0.0  0.0      0     0 ?        S    Sep01   0:00 [ksoftirqd/1]
+root        15  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kworker/1:0H]
+root        16  0.0  0.0      0     0 ?        S    Sep01   0:00 [watchdog/2]
+root        17  0.0  0.0      0     0 ?        S    Sep01   0:00 [migration/2]
+root        18  0.0  0.0      0     0 ?        S    Sep01   0:00 [ksoftirqd/2]
+root        20  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kworker/2:0H]
+root        21  0.0  0.0      0     0 ?        S    Sep01   0:00 [watchdog/3]
+root        22  0.0  0.0      0     0 ?        S    Sep01   0:00 [migration/3]
+root        23  0.0  0.0      0     0 ?        S    Sep01   0:00 [ksoftirqd/3]
+root        25  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kworker/3:0H]
+root        26  0.0  0.0      0     0 ?        S    Sep01   0:00 [kdevtmpfs]
+root        27  0.0  0.0      0     0 ?        S<   Sep01   0:00 [netns]
+root        28  0.0  0.0      0     0 ?        S<   Sep01   0:00 [perf]
+root        29  0.0  0.0      0     0 ?        S    Sep01   0:00 [khungtaskd]
+root        30  0.0  0.0      0     0 ?        S<   Sep01   0:00 [writeback]
+root        31  0.0  0.0      0     0 ?        SN   Sep01   0:00 [ksmd]
+root        32  0.0  0.0      0     0 ?        SN   Sep01   0:00 [khugepaged]
+root        33  0.0  0.0      0     0 ?        S<   Sep01   0:00 [crypto]
+root        34  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kintegrityd]
+root        35  0.0  0.0      0     0 ?        S<   Sep01   0:00 [bioset]
+root        36  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kblockd]
+root        37  0.0  0.0      0     0 ?        S<   Sep01   0:00 [ata_sff]
+root        38  0.0  0.0      0     0 ?        S<   Sep01   0:00 [md]
+root        39  0.0  0.0      0     0 ?        S<   Sep01   0:00 [devfreq_wq]
+root        41  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/2:1]
+root        43  0.1  0.0      0     0 ?        S    Sep01   0:01 [kswapd0]
+root        44  0.0  0.0      0     0 ?        S<   Sep01   0:00 [vmstat]
+root        45  0.0  0.0      0     0 ?        S    Sep01   0:00 [fsnotify_mark]
+root        46  0.0  0.0      0     0 ?        S    Sep01   0:00 [ecryptfs-kthrea]
+root        62  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kthrotld]
+root        63  0.0  0.0      0     0 ?        S<   Sep01   0:00 [acpi_thermal_pm]
+root        64  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/u16:2]
+root        65  0.0  0.0      0     0 ?        S<   Sep01   0:00 [bioset]
+root        66  0.0  0.0      0     0 ?        S<   Sep01   0:00 [bioset]
+root        67  0.0  0.0      0     0 ?        S<   Sep01   0:00 [bioset]
+root        69  0.0  0.0      0     0 ?        S<   Sep01   0:00 [bioset]
+root        70  0.0  0.0      0     0 ?        S<   Sep01   0:00 [bioset]
+root        71  0.0  0.0      0     0 ?        S<   Sep01   0:00 [bioset]
+root        72  0.0  0.0      0     0 ?        S<   Sep01   0:00 [bioset]
+root        73  0.0  0.0      0     0 ?        S<   Sep01   0:00 [bioset]
+root        74  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/0:1]
+root        78  0.0  0.0      0     0 ?        S<   Sep01   0:00 [ipv6_addrconf]
+root        92  0.0  0.0      0     0 ?        S<   Sep01   0:00 [deferwq]
+root        93  0.0  0.0      0     0 ?        S<   Sep01   0:00 [charger_manager]
+root       147  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kpsmoused]
+root       149  0.0  0.0      0     0 ?        S    Sep01   0:00 [scsi_eh_0]
+root       150  0.0  0.0      0     0 ?        S<   Sep01   0:00 [scsi_tmf_0]
+root       151  0.0  0.0      0     0 ?        S    Sep01   0:00 [scsi_eh_1]
+root       152  0.0  0.0      0     0 ?        S<   Sep01   0:00 [scsi_tmf_1]
+root       153  0.0  0.0      0     0 ?        S    Sep01   0:00 [scsi_eh_2]
+root       154  0.0  0.0      0     0 ?        S<   Sep01   0:00 [scsi_tmf_2]
+root       155  0.0  0.0      0     0 ?        S    Sep01   0:00 [scsi_eh_3]
+root       156  0.0  0.0      0     0 ?        S<   Sep01   0:00 [scsi_tmf_3]
+root       157  0.0  0.0      0     0 ?        S    Sep01   0:00 [scsi_eh_4]
+root       158  0.0  0.0      0     0 ?        S<   Sep01   0:00 [scsi_tmf_4]
+root       159  0.0  0.0      0     0 ?        S    Sep01   0:00 [scsi_eh_5]
+root       160  0.0  0.0      0     0 ?        S<   Sep01   0:00 [scsi_tmf_5]
+root       169  0.0  0.0      0     0 ?        S    Sep01   0:00 [scsi_eh_6]
+root       170  0.0  0.0      0     0 ?        S<   Sep01   0:00 [scsi_tmf_6]
+root       171  0.0  0.0      0     0 ?        S    Sep01   0:00 [usb-storage]
+root       172  0.0  0.0      0     0 ?        S<   Sep01   0:00 [bioset]
+root       173  0.0  0.0      0     0 ?        S<   Sep01   0:00 [bioset]
+root       187  0.0  0.0      0     0 ?        S    Sep01   0:00 [jbd2/sda2-8]
+root       188  0.0  0.0      0     0 ?        S<   Sep01   0:00 [ext4-rsv-conver]
+root       202  0.0  0.0      0     0 ?        S<   Sep01   0:00 [bioset]
+root       223  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kworker/2:1H]
+root       224  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kworker/1:1H]
+root       319  0.0  0.0  19624  2120 ?        S    Sep01   0:00 upstart-udev-bridge --daemon
+root       323  0.0  0.1  52536  4220 ?        Ss   Sep01   0:00 /lib/systemd/systemd-udevd --daemon
+root       368  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kworker/3:1H]
+root       369  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kworker/0:1H]
+root       390  0.0  0.0      0     0 ?        S    Sep01   0:00 [irq/28-mei_me]
+root       431  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kvm-irqfd-clean]
+root       432  0.0  0.0      0     0 ?        S<   Sep01   0:00 [cfg80211]
+root       485  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kfd_process_wq]
+root       487  0.0  0.0      0     0 ?        S<   Sep01   0:00 [ttm_swap]
+root       490  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kmemstick]
+root       491  0.0  0.0      0     0 ?        S    Sep01   0:00 [rtsx_usb_ms_1]
+root       492  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kworker/u17:0]
+root       493  0.0  0.0      0     0 ?        S<   Sep01   0:00 [hci0]
+root       494  0.0  0.0      0     0 ?        S<   Sep01   0:00 [hci0]
+root       496  0.0  0.0      0     0 ?        S<   Sep01   0:00 [kworker/u17:2]
+root       498  0.0  0.0      0     0 ?        S    Sep01   0:00 [wl_event_handle]
+root       575  0.0  0.0  15540  2116 ?        S    Sep01   0:00 upstart-socket-bridge --daemon
+root       617  0.0  0.0      0     0 ?        S<   Sep01   0:00 [radeon-crtc]
+root       618  0.0  0.0      0     0 ?        S<   Sep01   0:00 [radeon-crtc]
+root       767  0.0  0.0  15292   208 ?        S    Sep01   0:00 upstart-file-bridge --daemon
+message+   770  0.0  0.0  40244  3792 ?        Ss   Sep01   0:00 dbus-daemon --system --fork
+root       783  0.0  0.1 334460  7512 ?        Ssl  Sep01   0:00 /usr/sbin/ModemManager
+root       794  0.0  0.0  43572  3356 ?        Ss   Sep01   0:00 /lib/systemd/systemd-logind
+root       796  0.0  0.0  19312  2748 ?        Ss   Sep01   0:00 /usr/sbin/bluetoothd
+syslog     803  0.0  0.0 255856  3068 ?        Ssl  Sep01   0:00 rsyslogd
+root       827  0.0  0.0      0     0 ?        S<   Sep01   0:00 [krfcommd]
+avahi      832  0.0  0.0  32364  3004 ?        S    Sep01   0:00 avahi-daemon: running [shadeslayer.local]
+avahi      841  0.0  0.0  32236   248 ?        S    Sep01   0:00 avahi-daemon: chroot helper
+root       844  0.0  0.2 356856 11528 ?        Ssl  Sep01   0:00 NetworkManager
+root       852  0.0  0.2 295952  8700 ?        Sl   Sep01   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root       958  0.0  0.0  20028  2068 tty4     Ss+  Sep01   0:00 /sbin/getty -8 38400 tty4
+root       962  0.0  0.0  20028  2072 tty5     Ss+  Sep01   0:00 /sbin/getty -8 38400 tty5
+root       963  0.0  0.1 125584  7040 ?        Ssl  Sep01   0:00 thermald --no-daemon --dbus-enable
+root       971  0.0  0.0  20028  2068 tty2     Ss+  Sep01   0:00 /sbin/getty -8 38400 tty2
+root       972  0.0  0.0  20028  2096 tty3     Ss+  Sep01   0:00 /sbin/getty -8 38400 tty3
+root       975  0.0  0.0  20028  2116 tty6     Ss+  Sep01   0:00 /sbin/getty -8 38400 tty6
+root      1019  0.0  0.1  61396  5404 ?        Ss   Sep01   0:00 /usr/sbin/sshd -D
+root      1050  0.0  0.1  75376  6496 ?        Ss   Sep01   0:00 /usr/sbin/cups-browsed
+root      1057  0.0  0.0   4384  1604 ?        Ss   Sep01   0:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+kernoops  1065  0.0  0.0  37160  2588 ?        Ss   Sep01   0:00 /usr/sbin/kerneloops
+root      1072  0.0  0.1 292672  7260 ?        SLsl Sep01   0:00 lightdm
+root      1078  0.0  0.0  19208  2168 ?        Ss   Sep01   0:00 /usr/sbin/irqbalance
+root      1080  0.0  0.0  23668  2280 ?        Ss   Sep01   0:00 cron
+root      1088  1.5  2.5 488112 101000 tty7    Ssl+ Sep01   0:17 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root      1091  0.0  0.2 302240  7928 ?        Sl   Sep01   0:00 /usr/lib/accountsservice/accounts-daemon
+root      1092  0.0  0.1  30640  5344 ?        Ss   Sep01   0:00 /sbin/wpa_supplicant -B -P /run/sendsigs.omit.d/wpasupplicant.pid -u -s -O /var/run/wpa_supplicant
+root      1136  0.0  0.1  10244  5236 ?        S    Sep01   0:00 /sbin/dhclient -d -sf /usr/lib/NetworkManager/nm-dhcp-client.action -pf /run/sendsigs.omit.d/network-manager.dhclient-eth0.pid -lf /var/lib/NetworkManager/dhclient-00caa9a0-80e3-49cb-8e48-27305ca7c568-eth0.lease -cf /var/lib/NetworkManager/dhclient-eth0.conf eth0
+whoopsie  1147  0.0  0.3 437156 11828 ?        Ssl  Sep01   0:00 whoopsie
+root      1167  0.0  0.0  20028  2128 tty1     Ss+  Sep01   0:00 /sbin/getty -8 38400 tty1
+nobody    1207  0.0  0.0  35236  3248 ?        S    Sep01   0:00 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.1.1 --conf-file=/var/run/NetworkManager/dnsmasq.conf --cache-size=0 --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+root      1360  0.0  0.0      0     0 ?        S    Sep01   0:00 [kauditd]
+root      1375  0.0  0.1  10244  5236 ?        S    Sep01   0:00 /sbin/dhclient -d -sf /usr/lib/NetworkManager/nm-dhcp-client.action -pf /run/sendsigs.omit.d/network-manager.dhclient-wlan0.pid -lf /var/lib/NetworkManager/dhclient-414701ef-c851-4e21-85c5-9911ba4e743f-wlan0.lease -cf /var/lib/NetworkManager/dhclient-wlan0.conf wlan0
+root      1409  0.0  0.1 170516  6504 ?        Sl   Sep01   0:00 lightdm --session-child 12 19
+root      1435  0.0  0.1 239664  7524 ?        Sl   Sep01   0:00 /usr/lib/upower/upowerd
+rtkit     1548  0.0  0.0 168928  2500 ?        SNl  Sep01   0:00 /usr/lib/rtkit/rtkit-daemon
+colord    1589  0.0  0.2 311040 11636 ?        Sl   Sep01   0:00 /usr/lib/colord/colord
+root      1783  0.0  0.1  76876  6520 ?        Ss   Sep01   0:00 /usr/sbin/cupsd -f
+root      1794  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/3:0]
+root      1795  0.1  0.0      0     0 ?        S    Sep01   0:00 [kworker/u16:0]
+root      1796  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/1:0]
+himanshu  1841  0.1  0.3 325428 12096 ?        SLl  Sep01   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+himanshu  1843  0.0  0.1  40340  4344 ?        Ss   Sep01   0:00 init --user
+himanshu  1907  0.4  0.0  23192  3516 ?        Ss   Sep01   0:02 dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-cuh37hvDBp
+himanshu  1918  0.0  0.0  22316  2332 ?        Ss   Sep01   0:00 upstart-event-bridge
+himanshu  1927  0.4  0.2 376620  8544 ?        Ssl  Sep01   0:02 /usr/bin/ibus-daemon --daemonize --xim
+himanshu  1931  0.0  0.2  78212  7948 ?        Ss   Sep01   0:00 /usr/lib/x86_64-linux-gnu/hud/window-stack-bridge
+himanshu  1935  0.0  0.1 196660  5620 ?        Sl   Sep01   0:00 /usr/lib/gvfs/gvfsd
+himanshu  1942  0.0  0.2 360444  9260 ?        Sl   Sep01   0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+himanshu  1945  0.0  0.1 295792  7716 ?        Sl   Sep01   0:00 /usr/lib/ibus/ibus-dconf
+himanshu  1947  0.1  0.6 468744 25832 ?        Sl   Sep01   0:00 /usr/lib/ibus/ibus-ui-gtk3
+himanshu  1954  0.0  0.3 396488 15292 ?        Sl   Sep01   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+himanshu  1960  0.0  0.1 367716  7728 ?        Sl   Sep01   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+himanshu  1964  0.0  0.0  39276  3492 ?        S    Sep01   0:00 /bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+himanshu  1967  0.0  0.1 124928  4880 ?        Sl   Sep01   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+himanshu  1984  0.0  0.0  22324  1820 ?        S    Sep01   0:00 upstart-dbus-bridge --daemon --session --user --bus-name session
+himanshu  1986  0.0  0.0  30796   292 ?        S    Sep01   0:00 upstart-file-bridge --daemon --user
+himanshu  1988  0.0  0.0  22324   220 ?        S    Sep01   0:00 upstart-dbus-bridge --daemon --system --user --bus-name system
+himanshu  1991  0.0  0.1 219932  7704 ?        Sl   Sep01   0:00 /usr/lib/ibus/ibus-engine-simple
+himanshu  2007  0.1  0.8 752144 35020 ?        Ssl  Sep01   0:00 /usr/lib/unity-settings-daemon/unity-settings-daemon
+himanshu  2011  0.5  1.0 652388 42256 ?        Ssl  Sep01   0:03 /usr/lib/x86_64-linux-gnu/hud/hud-service
+himanshu  2014  0.0  0.5 592428 23112 ?        Ssl  Sep01   0:00 gnome-session --session=ubuntu
+himanshu  2017  0.5  0.9 563244 35904 ?        Ssl  Sep01   0:03 /usr/lib/unity/unity-panel-service
+himanshu  2070  0.1  0.5 536124 21324 ?        Sl   Sep01   0:00 /usr/lib/x86_64-linux-gnu/bamf/bamfdaemon
+himanshu  2091  0.0  0.1 178320  4888 ?        Sl   Sep01   0:00 /usr/lib/dconf/dconf-service
+root      2096  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/2:0]
+himanshu  2097  0.0  0.0  22324  2560 ?        S    Sep01   0:00 syndaemon -i 1.0 -t -K -R
+himanshu  2105  0.0  0.2 373836  9840 ?        S<l  Sep01   0:00 /usr/bin/pulseaudio --start --log-target=syslog
+himanshu  2129  2.8  2.3 1259632 93356 ?       Sl   Sep01   0:19 compiz
+himanshu  2136  0.0  0.5 565480 23312 ?        Sl   Sep01   0:00 /usr/lib/x86_64-linux-gnu/indicator-keyboard-service --use-gtk
+himanshu  2143  0.0  0.1 365240  7532 ?        Ssl  Sep01   0:00 /usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service
+himanshu  2144  0.0  0.1 293788  7700 ?        Ssl  Sep01   0:00 /usr/lib/x86_64-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+himanshu  2148  0.0  0.2 295728  9820 ?        Ssl  Sep01   0:00 /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service
+himanshu  2150  0.0  0.3 1164708 14852 ?       Ssl  Sep01   0:00 /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service
+himanshu  2154  0.0  0.2 495628 11448 ?        Ssl  Sep01   0:00 /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service
+himanshu  2155  0.0  0.5 454944 21888 ?        Ssl  Sep01   0:00 /usr/lib/x86_64-linux-gnu/indicator-printers/indicator-printers-service
+himanshu  2157  0.0  0.2 513208 10076 ?        Ssl  Sep01   0:00 /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service
+himanshu  2180  0.0  0.4 492748 18076 ?        Sl   Sep01   0:00 /usr/lib/evolution/evolution-source-registry
+himanshu  2185  0.0  0.2 251848 11048 ?        Sl   Sep01   0:00 /usr/lib/geoclue/geoclue-master
+himanshu  2190  0.0  0.4 340152 19060 ?        Sl   Sep01   0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+himanshu  2192  2.1  1.2 1384312 48412 ?       Sl   Sep01   0:14 nautilus -n
+himanshu  2195  0.0  0.4 417792 18816 ?        Sl   Sep01   0:00 /usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+himanshu  2199  0.0  0.7 555928 30132 ?        Sl   Sep01   0:00 nm-applet
+himanshu  2200  0.0  0.2 286804  8336 ?        Sl   Sep01   0:00 /usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+himanshu  2216  0.0  0.2 385276  9632 ?        Sl   Sep01   0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+himanshu  2219  0.0  0.4 348808 19520 ?        Sl   Sep01   0:00 /usr/lib/x86_64-linux-gnu/notify-osd
+himanshu  2238  0.0  0.1  58032  5924 ?        S    Sep01   0:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+himanshu  2244  0.0  0.3 256716 13892 ?        Sl   Sep01   0:00 /usr/lib/x86_64-linux-gnu/ubuntu-geoip-provider
+root      2250  0.0  0.2 459732  9036 ?        Sl   Sep01   0:00 /usr/lib/udisks2/udisksd --no-debug
+himanshu  2260  0.0  0.1 200292  5344 ?        Sl   Sep01   0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+himanshu  2264  0.0  0.2 285984  8128 ?        Sl   Sep01   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+himanshu  2269  0.0  0.1 212456  5952 ?        Sl   Sep01   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+himanshu  2286  0.0  1.3 1097168 52644 ?       Sl   Sep01   0:00 /usr/lib/evolution/evolution-calendar-factory
+himanshu  2292  0.0  0.2 374324  8048 ?        Sl   Sep01   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.3 /org/gtk/gvfs/exec_spaw/0
+himanshu  2307  0.0  0.1 270396  4516 ?        Sl   Sep01   0:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.3 /org/gtk/gvfs/exec_spaw/1
+root      2345  0.0  0.0  13708  2108 ?        Ss   Sep01   0:00 /sbin/mount.ntfs /dev/sdb1 /media/himanshu/Transcend -o rw,nosuid,nodev,uhelper=udisks2,uid=1000,gid=1000,dmask=0077,fmask=0177
+himanshu  2348  0.0  0.5 456128 19964 ?        Sl   Sep01   0:00 telepathy-indicator
+himanshu  2354  0.0  0.4 336636 15720 ?        Sl   Sep01   0:00 /usr/lib/telepathy/mission-control-5
+himanshu  2370  0.1  0.6 125396 25148 ?        Sl   Sep01   0:00 /usr/lib/gvfs/gvfsd-metadata
+himanshu  2379  0.0  0.3 562312 13944 ?        Sl   Sep01   0:00 zeitgeist-datahub
+himanshu  2385  0.0  0.2 363656  8660 ?        Sl   Sep01   0:00 /usr/bin/zeitgeist-daemon
+himanshu  2391  0.0  0.3 330192 15388 ?        Sl   Sep01   0:00 /usr/lib/x86_64-linux-gnu/zeitgeist-fts
+himanshu  2408  0.0  0.0  11428   664 ?        S    Sep01   0:00 /bin/cat
+himanshu  2439  1.1  0.8 627580 31524 ?        Sl   Sep01   0:07 /usr/lib/gnome-terminal/gnome-terminal-server
+himanshu  2446  0.0  0.0  14836  1756 ?        S    Sep01   0:00 gnome-pty-helper
+root      2479  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/0:0]
+himanshu  2512  0.0  0.6 503596 24500 ?        Sl   Sep01   0:00 update-notifier
+himanshu  2598  0.0  0.2 385308  8188 ?        Sl   Sep01   0:00 /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
+himanshu  2684  0.0  0.1  49708  7092 pts/11   Ss   Sep01   0:00 zsh
+root      2743  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/3:1]
+root      2825  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/u16:1]
+himanshu  3054  0.1  1.0 913276 40924 pts/11   Tl   Sep01   0:00 node server.js
+himanshu  3060  0.0  0.1  49712  7060 pts/0    Ss   Sep01   0:00 zsh
+root      3270  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/1:1]
+root      3437  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/2:2]
+himanshu  3516  2.1  1.5 1061040 59716 ?       Ssl  Sep01   0:04 /opt/sublime_text/sublime_text log
+root      3560  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/0:2]
+himanshu  3568  1.7  1.2 293120 49208 ?        Sl   Sep01   0:03 /opt/sublime_text/plugin_host 3516
+root      3573  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/3:2]
+himanshu  3578 12.4  6.0 1250924 235072 ?      SLl  Sep01   0:21 /opt/google/chrome/chrome    
+himanshu  3585  0.0  0.0  11428   644 ?        S    Sep01   0:00 cat
+himanshu  3586  0.0  0.0  11428   712 ?        S    Sep01   0:00 cat
+himanshu  3589  0.1  1.2 364048 47492 ?        S    Sep01   0:00 /opt/google/chrome/chrome --type=zygote --enable-crash-reporter=cccb7248-a61b-4205-88d7-e05e1ce75f33,
+himanshu  3590  0.0  0.1  37036  4500 ?        S    Sep01   0:00 /opt/google/chrome/nacl_helper
+himanshu  3593  0.0  0.3 364048 11844 ?        S    Sep01   0:00 /opt/google/chrome/chrome --type=zygote --enable-crash-reporter=cccb7248-a61b-4205-88d7-e05e1ce75f33,
+himanshu  3630  2.2  2.0 442840 79776 ?        Sl   Sep01   0:03 /opt/google/chrome/chrome --type=gpu-process --field-trial-handle=1 --enable-crash-reporter=cccb7248-a61b-4205-88d7-e05e1ce75f33, --supports-dual-gpus=false --gpu-driver-bug-workarounds=1,7,8,10,15,23,28,61,66,74 --disable-gl-extensions=GL_ARB_timer_query GL_EXT_timer_query GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent --gpu-vendor-id=0x1002 --gpu-device-id=0x6601 --gpu-driver-vendor=Mesa --gpu-driver-version=11.2.0 --gpu-driver-date --gpu-secondary-vendor-ids=0x8086 --gpu-secondary-device-ids=0x0166 --gpu-active-vendor-id=0x8086 --gpu-active-device-id=0x0166 --enable-crash-reporter=cccb7248-a61b-4205-88d7-e05e1ce75f33, --service-request-channel-token=EFD874F279037206B068909AAF7B77A8 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+himanshu  3674  0.0  0.3 376660 12256 ?        S    Sep01   0:00 /opt/google/chrome/chrome --type=gpu-broker                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+himanshu  3681  4.7  5.4 1077304 214348 ?      Sl   Sep01   0:07 /opt/google/chrome/chrome --type=renderer --field-trial-handle=1 --primordial-pipe-token=15757D1C4CD5EDC9C10FEB804B38B8AB --lang=en-GB --enable-crash-reporter=cccb7248-a61b-4205-88d7-e05e1ce75f33, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --blink-settings=disallowFetchForDocWrittenScriptsInMainFrame=false,disallowFetchForDocWrittenScriptsInMainFrameOnSlowConnections=true --enable-pinch --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --disable-accelerated-video-decode --service-request-channel-token=15757D1C4CD5EDC9C10FEB804B38B8AB --renderer-client-id=8 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+himanshu  3746  0.2  2.0 763104 79536 ?        Sl   Sep01   0:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=1 --primordial-pipe-token=022DDD1B24AC4AA69F403AD54C7F0E0C --lang=en-GB --enable-crash-reporter=cccb7248-a61b-4205-88d7-e05e1ce75f33, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --blink-settings=disallowFetchForDocWrittenScriptsInMainFrame=false,disallowFetchForDocWrittenScriptsInMainFrameOnSlowConnections=true --enable-pinch --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --disable-accelerated-video-decode --service-request-channel-token=022DDD1B24AC4AA69F403AD54C7F0E0C --renderer-client-id=5 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+himanshu  3753  5.8  5.4 1080532 214396 ?      Sl   Sep01   0:09 /opt/google/chrome/chrome --type=renderer --field-trial-handle=1 --primordial-pipe-token=772F7D2C9BD61B51FE062D832274711A --lang=en-GB --enable-crash-reporter=cccb7248-a61b-4205-88d7-e05e1ce75f33, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --blink-settings=disallowFetchForDocWrittenScriptsInMainFrame=false,disallowFetchForDocWrittenScriptsInMainFrameOnSlowConnections=true --enable-pinch --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --disable-accelerated-video-decode --service-request-channel-token=772F7D2C9BD61B51FE062D832274711A --renderer-client-id=6 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+himanshu  3758  0.1  1.8 760220 70452 ?        Sl   Sep01   0:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=1 --primordial-pipe-token=BE2A8BCBEFB5864F1C778A1C31866320 --lang=en-GB --enable-crash-reporter=cccb7248-a61b-4205-88d7-e05e1ce75f33, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --blink-settings=disallowFetchForDocWrittenScriptsInMainFrame=false,disallowFetchForDocWrittenScriptsInMainFrameOnSlowConnections=true --enable-pinch --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --disable-accelerated-video-decode --service-request-channel-token=BE2A8BCBEFB5864F1C778A1C31866320 --renderer-client-id=7 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+himanshu  3763  0.3  1.9 762776 77296 ?        Sl   Sep01   0:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=1 --primordial-pipe-token=195F722EEBEBD50D468BF5E644508CEA --lang=en-GB --enable-crash-reporter=cccb7248-a61b-4205-88d7-e05e1ce75f33, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --blink-settings=disallowFetchForDocWrittenScriptsInMainFrame=false,disallowFetchForDocWrittenScriptsInMainFrameOnSlowConnections=true --enable-pinch --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --disable-accelerated-video-decode --service-request-channel-token=195F722EEBEBD50D468BF5E644508CEA --renderer-client-id=9 --v8-natives-passed-by-fd --v8-snapshot-passed-by-fd
+himanshu  4138  0.5  1.1 356880 45392 pts/0    Sl+  Sep01   0:00 mongod --dbpath database/dump
+root      4151  0.0  0.0      0     0 ?        S    Sep01   0:00 [kworker/1:2]
+himanshu  4543  0.0  0.0  22656  2644 pts/11   R+   00:00   0:00 ps aux
+himanshu  4544  0.0  0.0  11416  1828 pts/11   S+   00:00   0:00 tee log
