@@ -1,0 +1,62 @@
+<div class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"style="text-align:center;" >{{title}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="content">
+                    <form>
+                        <div class="animate-show-hide">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">FIRST NAME</label>
+                                        <input type="text" class="form-control" value={{first_name}} ng-model="first_name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">LASTNAME</label>
+                                        <input type="text" class="form-control" value={{last_name}} ng-model="last_name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">PHONE NUMBER</label>
+                                        <input type="text" class="form-control" value="phone" ng-model="phone">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">EMAIL-ID</label>
+                                        <input type="text" class="form-control" value={{email}} readonly="readonly" ng-model="email">
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">ADDRESS</label>
+                                        <input type="text" class="form-control" value={{address}} ng-model="address">
+                                    </div>
+                                </div>
+                                 <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">GENDER</label>
+                                        <input type="text" class="form-control" value={{gender}} ng-model="gender" readonly="readonly">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-fill" ng-click="update()"  style="display:block;margin: 0 auto;">Update Profile </button>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

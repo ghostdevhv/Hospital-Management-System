@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Hospital Management System</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!--     Fonts and icons     -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.css" />
+    <link href="css/animate.min.css" rel="stylesheet"/>
+    <link href="css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/patient.css">
+
+     <!--   Core JS Files   -->
+    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-animate.js"></script>
+    <script src="js/angular-modal-service.min.js"></script>
+    <script src="js/light-bootstrap-dashboard.js"></script>
+    <script type="text/javascript" src="controllers/patient.js"></script>
+    <script type="text/javascript" src="controllers/update_profile.js"></script>
+
+</head>
+<body ng-app="patient">
+
+<div class="wrapper" ng-controller="patient_controller" ng-init="init()">
+    <div class="sidebar" data-color="blue" data-image="img/sidebar-5.jpg">
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="http://iitkgp.ac.in" class="simple-text">
+                    IIT-Kharagpur
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li class="active" id="accountDetails">
+                    <a href="#">
+                        <i class="pe-7s-user"></i>
+                        <p>My account</p>
+                    </a>
+                </li>
+                <li id="appointmentDetails">
+                    <a href="#">
+                        <i class="pe-7s-note2"></i>
+                        <p>Appointments</p>
+                    </a>
+                </li>
+                <li id="reportDetails">
+                    <a href="#">
+                        <i class="pe-7s-news-paper"></i>
+                        <p>Reports</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+           <!--          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> -->
+                    <h2 class="navbar-brand" style="font-size: 20px;">Welcome</h3>
+                    <p class="navbar-brand" style="font-size: 17px;">{{user_name}}</p>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Notifications
+                                    <b class="caret"></b>
+                                    <span class="notification">5</span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                              </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+         <button id="accountContent1" type="submit" class="btn btn-info btn-fill" ng-click="edit()" style="display:block;margin: 0 auto; margin-top:2%; width: 20%; margin-right: 5%;"> Edit Profile </button>
+
+        <div class="content" id="accountContent">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="header">
+                                <img src="img/user-default.png" class="img-responsive" style="">
+                            </div>
+                            <div class="content">
+                                <h3 style="text-align: center;">{{first_name}} {{last_name}}</h3>
+                                <p style="text-align: center; margin-top: -3%;">{{user_name}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">About Me</h4>
+                                <hr>
+                            </div>
+                            <div class="content">
+                                <div class="row ">
+                                    <div class="col-md-6 border-right">
+                                        <span class="fa fa-map-marker" style="font-size: 150%; font-weight: bolder;"></span>
+                                        <span style="font-size: 130%; margin-left: 3%; font-weight: bolder;">Address</span>
+                                        <p style="margin-left: 1%; font-weight: lighter; margin-bottom: 5%; overflow: auto;">{{address}}</p>
+
+                                        <span class="fa fa-birthday-cake" style="font-size: 150%; font-weight: bolder;"></span>
+                                        <span style="font-size: 130%; margin-left: 3%; font-weight: bolder;">Date of Birthday</span>
+                                        <p style="margin-left: 1%; font-weight: lighter; margin-bottom: 5%;">{{dateofbirth}}</p>
+
+                                        <span class="fa fa-intersex" style="font-size: 150%; font-weight: bolder;"></span>
+                                        <span style="font-size: 130%; font-weight: bolder; margin-left: 3%;">Gender</span>
+                                        <p style="margin-left: 1%; font-weight: lighter; margin-bottom: 5%;">{{gender}}</p>  
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <span class="fa fa-phone" style="font-size: 150%; font-weight: bolder;"></span>
+                                        <span style="font-size: 130%; margin-left: 3%; font-weight: bolder;">Phone Number</span>
+                                        <p style="margin-left: 1%; font-weight: lighter; margin-bottom: 5%;">{{phone}}</p>
+
+                                        <span class="fa fa-envelope-o" style="font-size: 150%; font-weight: bolder;"></span>
+                                        <span style="font-size: 130%; margin-left: 3%; font-weight: bolder;">Email-ID</span>
+                                        <p style="margin-left: 1%; font-weight: lighter; margin-bottom: 5%; overflow: auto;">{{email}}</p>
+
+                                         <span class="fa fa-cog" style="font-size: 150%; font-weight: bolder;"></span>
+                                        <span style="font-size: 130%; font-weight: bolder; margin-left: 1%;">Designation</span>
+                                        <p style="margin-left: 1%; font-weight: lighter; margin-bottom: 5%;">{{designation}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <button id="appointmentContent1" type="submit" class="btn btn-info btn-fill" ng-click="schedule()" style="display:block;margin: 0 auto; margin-top:2%; width: 20%; text-align: center;"> Schedule an Appointment </button>
+
+        <div class="content" id="appointmentContent">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Future Appointments</h4>
+                                <hr>
+                            </div>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Past Appointments</h4>
+                                <hr>
+                            </div>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+      <!--   <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Company
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                </p>
+            </div>
+        </footer> -->
+
+    </div>
+</div>
+<script type="text/javascript">
+    function codeAddress(){
+        $('#reportContent').fadeOut(0);
+        $('#appointmentContent').fadeOut(0);
+        $('#appointmentContent1').fadeOut(0);
+    }
+    window.onload = codeAddress;
+
+    $(document).ready(function(){
+        $('#accountDetails').click(function(){
+            $('#accountDetails').addClass('active');
+            $('#appointmentDetails').removeClass('active');
+            $('#reportDetails').removeClass('active');
+            $('#accountContent').fadeIn(300);
+            $('#accountContent1').fadeIn(300);
+            $('#appointmentContent').fadeOut(0);
+            $('#appointmentContent1').fadeOut(0);
+            $('#reportContent').fadeOut(0);
+        });
+
+        $('#appointmentDetails').click(function(){
+            $('#accountDetails').removeClass('active');
+            $('#appointmentDetails').addClass('active');
+            $('#reportDetails').removeClass('active');
+            $('#accountContent').fadeOut(0);
+            $('#accountContent1').fadeOut(0);
+            $('#appointmentContent').fadeIn(300);
+            $('#appointmentContent1').fadeIn(300);
+            $('#reportContent').fadeOut(0);
+        });
+
+        $('#reportDetails').click(function(){
+            $('#accountDetails').removeClass('active');
+            $('#appointmentDetails').removeClass('active');
+            $('#reportDetails').addClass('active');
+            $('#accountContent').fadeOut(0);
+            $('#accountContent1').fadeOut(0);
+            $('#appointmentContent').fadeOut(0);
+            $('#appointmentContent1').fadeOut(0);
+            $('#reportContent').fadeIn(0);
+        });
+    })
+</script>
+
+</body>
+
+</html>

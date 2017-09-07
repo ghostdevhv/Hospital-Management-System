@@ -1,0 +1,54 @@
+<div role="dialog" class="modal fade" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" ng-click="cancel()" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" style="text-align:center;">{{title}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="content">
+                    <form>
+                        <div class="animate-show-hide">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <p style="margin-left: 72%; margin-top: 7px;">I am a</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        
+                                        <select class="form-control" placeholder="Designation" name="designation" ng-model="designation">
+                                            <option value="" selected disabled>Select your Designation</option>
+                                            <option ng-repeat="x in occupation">{{ x }}</option>
+                                        </select>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group margin-bottom-sm">
+                                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                        <input class="form-control" type="text" placeholder="Username" ng-model="login_user">
+                                    </div>
+                                </div>    
+                            </div>    
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group" style="margin-top:10px;">
+                                        <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                                        <input class="form-control" type="password" placeholder="Password" ng-model="login_pass">
+                                    </div>
+                                </div> 
+                            </div>
+                            <button type="submit" class="btn btn-info btn-fill" ng-click="login()" style="display:block;margin: 0 auto; margin-top:10px; width: 100px;"> Login </button>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>    

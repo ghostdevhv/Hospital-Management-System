@@ -1,0 +1,99 @@
+<div class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"style="text-align:center;" >{{title}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="content">
+                    <form>
+                        <div class="animate-show-hide">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">FIRST NAME</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Himanshu" ng-model="firstname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">LASTNAME</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Verma" ng-model="lastname">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">USERNAME</label>
+                                        <input type="text" class="form-control" placeholder="e.g. shadeslayer" ng-model="username">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">PASSWORD</label>
+                                        <input type="password" class="form-control" ng-model="password">
+                                        <small id="passwordHelpInline" class="text-muted">
+                                            Must be 8-20 characters long.
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">DESIGNATION</label>
+                                        <select class="form-control" placeholder="Designation" name="designation" ng-model="designation">
+                                            <option value="" selected disabled>Select your Designation</option>
+                                            <option ng-repeat="x in occupation">{{ x }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">PHONE NUMBER</label>
+                                        <input type="text" class="form-control" placeholder="e.g. XXXXXX" ng-model="phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">EMAIL-ID</label>
+                                        <input type="text" class="form-control" placeholder="e.g. xx@xx.com" ng-model="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">DATE OF BIRTH</label>
+                                        <input type="text" class="form-control" placeholder="dd/mm/yyyy" ng-model="dateofbirth">
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">ADDRESS</label>
+                                        <input type="text" class="form-control" placeholder="e.g. A-210 LBS Hall of Residence" ng-model="address">
+                                    </div>
+                                </div>
+                                 <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">GENDER</label>
+                                        <select class="form-control" placeholder="Gender" name="gender" ng-model="gender">
+                                            <option value="" selected disabled>Gender</option>
+                                            <option ng-repeat="x in _gender">{{ x }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-fill" ng-click="signup()"  style="display:block;margin: 0 auto;">Create an  Account </button>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
