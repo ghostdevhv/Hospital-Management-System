@@ -14,7 +14,6 @@ app.controller('scheduleAppointmentController', ['$scope', '$element', 'title', 
     var tomorrow = new Date(today.getTime() + (24 * 60 * 60 * 1000));
     $scope.minDate = tomorrow.toDateString();
 
-
     $scope.close = function() {
             close({}, 500);
     };
@@ -24,10 +23,11 @@ app.controller('scheduleAppointmentController', ['$scope', '$element', 'title', 
             patient_name : $scope.patient_name,
             email : $scope.email,
             description : $scope.description,
-            date : $scope.date,
+            date : (new Date($scope.date)).getTime(),
             doctorType : $scope.doctorType,
-            state : '0'
-
+            state : '0',
+            doctorName : "NA",
+            appointmentTime : "NA"
         };
 
         $http.post('/schedules/insert', JSON.stringify(dataObj)).then(function(response){
