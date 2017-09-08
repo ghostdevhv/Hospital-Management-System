@@ -195,75 +195,36 @@
                                 <hr>
                             </div>
                             <div class="content">
-                                <div class="row" style="margin-bottom: 3%;">
-                                    <div class="col-md-4">
+                                <div class="row" style="margin-bottom: 3%;" ng-repeat="appointments in futureAppointment">
+                                    <div class="col-md-4" ng-repeat="appointment in appointments">
                                         <div class="card-1">
                                             <div class="header">
-                                                <h4 class="title">Audiologist</h4>
+                                                <h4 class="title" style="text-align: center;">{{appointment.doctorType}}</h4>
+                                            </div>
+                                            <div class="content">
+                                                <p><b>Doctor : </b>{{appointment.doctorName}}</p>
+                                                <p><b>Date : </b>{{convert_date(appointment.date)}}</p>
+                                                <p><b>Time : </b>{{appointment.appointmentTime}}</p>
                                                 <hr>
                                             </div>
-                                            <div class="footer" style="text-align: center;">
-                                                <div class="legend">
-                                                    <i class="fa fa-circle text-success"></i> Accepted
+                                            <div class="footer" style="text-align: center; margin-top: -20px;">
+                                                <div class="legend" ng-if="appointment.state=='0'">
                                                     <i class="fa fa-circle text-info"></i> Pending
-                                                    <i class="fa fa-circle text-danger"></i> Reject
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card-1">
-                                            <div class="header">
-                                                <h4 class="title">LOLOLOL</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card-1">
-                                            <div class="header">
-                                                <h4 class="title">LOLOLOL</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row" style="margin-bottom: 3%;">
-                                    <div class="col-md-4">
-                                        <div class="card-1">
-                                            <div class="header">
-                                                <h4 class="title">LOLOLOL</h4>
-                                                <hr>
-                                            </div>
-                                            <div class="footer" style="text-align: center;">
-                                                <div class="legend">
+                                                <div class="legend" ng-if="appointment.state=='1'">
                                                     <i class="fa fa-circle text-success"></i> Accepted
-                                                    <!-- <i class="fa fa-circle text-danger"></i> Bounce
-                                                    <i class="fa fa-circle text-warning"></i> Unsubscribe -->
+                                                </div>
+                                                <div class="legend" ng-if="appointment.state=='2'">
+                                                    <i class="fa fa-circle text-danger"></i> Rejected
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="card-1">
-                                            <div class="header">
-                                                <h4 class="title">LOLOLOL</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card-1">
-                                            <div class="header">
-                                                <h4 class="title">LOLOLOL</h4>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
@@ -272,6 +233,32 @@
                                 <hr>
                             </div>
                             <div class="content">
+                                <div class="row" style="margin-bottom: 3%;" ng-repeat="appointments in pastAppointment">
+                                    <div class="col-md-4" ng-repeat="appointment in appointments">
+                                        <div class="card-1">
+                                            <div class="header">
+                                                <h4 class="title" style="text-align: center;">{{appointment.doctorType}}</h4>
+                                            </div>
+                                            <div class="content">
+                                                <p><b>Doctor : </b>{{appointment.doctorName}}</p>
+                                                <p><b>Date : </b>{{convert_date(appointment.date)}}</p>
+                                                <p><b>Time : </b>{{appointment.appointmentTime}}</p>
+                                                <hr>
+                                            </div>
+                                            <div class="footer" style="text-align: center; margin-top: -20px;">
+                                                <div class="legend" ng-if="appointment.state=='0'">
+                                                    <i class="fa fa-circle text-info"></i> Pending
+                                                </div>
+                                                <div class="legend" ng-if="appointment.state=='1'">
+                                                    <i class="fa fa-circle text-success"></i> Accepted
+                                                </div>
+                                                <div class="legend" ng-if="appointment.state=='2'">
+                                                    <i class="fa fa-circle text-danger"></i> Rejected
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
