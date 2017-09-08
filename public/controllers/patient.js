@@ -43,6 +43,12 @@ app.controller('patient_controller', ['$scope','$window','$http','$location', 'M
                 }).then(function(response){
                     if(response.data){
                         console.log("Chal gaya -> Past");
+                        console.log(response.data.length)
+                        $scope.pastAppointment = []
+                        for (var i=0;i<response.data.length;i+=3){
+                            $scope.pastAppointment.push(response.data.slice(i,i+3));
+                        }
+                        console.log($scope.pastAppointment)
                     }
                 }, function(response){
                     console.log("failure");
@@ -57,6 +63,12 @@ app.controller('patient_controller', ['$scope','$window','$http','$location', 'M
                 }).then(function(response){
                     if(response.data){
                         console.log("Chal gaya -> Future");
+                        console.log(response.data.length)
+                        $scope.futureAppointment = []
+                        for (var i=0;i<response.data.length;i+=3){
+                            $scope.futureAppointment.push(response.data.slice(i,i+3));
+                        }
+                        console.log($scope.futureAppointment)
                     }
                 }, function(response){
                     console.log("failure");
@@ -64,6 +76,10 @@ app.controller('patient_controller', ['$scope','$window','$http','$location', 'M
             }
         }
         
+        $scope.convert_date = function($date){
+            return (new Date($date)).toDateString();
+        }
+
         $scope.logout = function(){
             $window.localStorage.clear();
             $window.location.href="/index.html";
