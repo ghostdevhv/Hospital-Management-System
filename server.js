@@ -182,18 +182,20 @@ app.post('/schedules/insert',function(req,res){
 	});
 })
 
-app.post('/schedules/futureAppointment',function(req,res){
-	console.log('Schedules - Future')
-	console.log(req.body);
-	dbSchedules.schedules.insert(req.body,function(err,doc){
+app.post('/schedules/pastAppointment',function(req,res){
+	console.log('Schedules - Past')
+	var today = (new Date()).getTime();
+	dbSchedules.schedules.find({'email':req.body.email, 'date':{$lt: today}},function(err,doc){
+		console.log(doc);
 		res.json(doc);
 	});
 })
 
-app.post('/schedules/pastAppointment',function(req,res){
-	console.log('Schedules - Past')
-	console.log(req.body);
-	dbSchedules.schedules.insert(req.body,function(err,doc){
+app.post('/schedules/futureAppointment',function(req,res){
+	console.log('Schedules - Future')
+	var today = (new Date()).getTime();
+	dbSchedules.schedules.find({'email':req.body.email, "date":{$gte: today}},function(err,doc){
+		console.log(doc);
 		res.json(doc);
 	});
 })
