@@ -6,6 +6,7 @@ var dbDoctorDetails=mongojs('doctordetails',['doctordetails']);
 var dbNurseDetails=mongojs('nursedetails',['nursedetails']);
 var dbPatientDetails=mongojs('patientdetails',['patientdetails']);
 var dbAdminbDetails=mongojs('admindetails',['admindetails']);
+var dbSchedules=mongojs('schedules',['schedules']);
 
 var app=express();
 var server=require('http').Server(app);
@@ -19,15 +20,14 @@ app.post('/doctordetails/register',function(req,res){
 	console.log(req.body);
 	dbDoctorDetails.doctordetails.insert(req.body,function(err,doc){
 		res.json(doc);
-		// console.log(doc);
 	});
+
 })
 app.post('/nursedetails/register',function(req,res){
 	console.log('Nurse Details -> Register')
 	console.log(req.body);
 	dbNurseDetails.nursedetails.insert(req.body,function(err,doc){
 		res.json(doc);
-		// console.log(doc);
 	});
 })
 app.post('/patientdetails/register',function(req,res){
@@ -35,7 +35,6 @@ app.post('/patientdetails/register',function(req,res){
 	console.log(req.body);
 	dbPatientDetails.patientdetails.insert(req.body,function(err,doc){
 		res.json(doc);
-		// console.log(doc);
 	});
 })
 app.post('/admindetails/register',function(req,res){
@@ -43,7 +42,6 @@ app.post('/admindetails/register',function(req,res){
 	console.log(req.body);
 	dbAdminDetails.admindetails.insert(req.body,function(err,doc){
 		res.json(doc);
-		// console.log(doc);
 	});
 })
 
@@ -52,9 +50,10 @@ app.post('/doctordetails/login', function(req,res){
 	console.log(req.body);
 	dbDoctorDetails.doctordetails.find(req.body,function(err, doc){
 		console.log(doc[0]);
-		console.log(doc[0].user_name);
 		var AuthenticationStatus = {
-			user_name : doc[0].user_name,
+			email: doc[0].email,
+			first_name: doc[0].first_name,
+			last_name: doc[0].last_name,
 		};
 		console.log(AuthenticationStatus);
 		res.json(AuthenticationStatus);
@@ -66,9 +65,10 @@ app.post('/nursedetails/login', function(req,res){
 	console.log(req.body);
 	dbNurseDetails.nursedetails.find(req.body,function(err, doc){
 		console.log(doc[0]);
-		console.log(doc[0].user_name);
 		var AuthenticationStatus = {
-			user_name : doc[0].user_name,
+			email: doc[0].email,
+			first_name: doc[0].first_name,
+			last_name: doc[0].last_name,
 		};
 		console.log(AuthenticationStatus);
 		res.json(AuthenticationStatus);
@@ -80,9 +80,10 @@ app.post('/patientdetails/login', function(req,res){
 	console.log(req.body);
 	dbPatientDetails.patientdetails.find(req.body,function(err, doc){
 		console.log(doc[0]);
-		console.log(doc[0].user_name);
 		var AuthenticationStatus = {
-			user_name : doc[0].user_name,
+			email: doc[0].email,
+			first_name: doc[0].first_name,
+			last_name: doc[0].last_name,
 		};
 		console.log(AuthenticationStatus);
 		res.json(AuthenticationStatus);
@@ -94,9 +95,10 @@ app.post('/admindetails/login', function(req,res){
 	console.log(req.body);
 	dbAdminDetails.admindetails.find(req.body,function(err, doc){
 		console.log(doc[0]);
-		console.log(doc[0].user_name);
 		var AuthenticationStatus = {
-			user_name : doc[0].user_name,
+			email: doc[0].email,
+			first_name: doc[0].first_name,
+			last_name: doc[0].last_name,
 		};
 		console.log("Heyya")
 		console.log(AuthenticationStatus);
@@ -146,32 +148,55 @@ app.post('/admindetails/getDetails', function(req, res){
 app.post('/doctordetails/updateDetails', function(req, res){
 	console.log('Update Details -> Doctor');
 	console.log(req.body);
-	dbDoctorDetails.doctordetails.update({'user_name':req.body.user_name}, {$set:req.body}, function(err, doc){
-		res.json(doc);
+	dbDoctorDetails.doctordetails.update({'email':req.body.email}, {$set:req.body}, function(err, doc){
+		res.json(req.body);
 	})	
 })
 app.post('/nursedetails/updateDetails', function(req, res){
 	console.log('Update Details -> Nurse');
 	console.log(req.body);
-	dbNurseDetails.nursedetails.update({'user_name':req.body.user_name}, {$set:req.body}, function(err, doc){
-		res.json(doc);
+	dbNurseDetails.nursedetails.update({'email':req.body.email}, {$set:req.body}, function(err, doc){
+		res.json(req.body);
 	})	
 })
 app.post('/patientdetails/updateDetails', function(req, res){
 	console.log('Update Details -> Patient');
 	console.log(req.body);
-	dbPatientDetails.patientdetails.update({'user_name':req.body.user_name}, {$set:req.body}, function(err, doc){
-		res.json(doc);
+	dbPatientDetails.patientdetails.update({'email':req.body.email}, {$set:req.body}, function(err, doc){
+		res.json(req.body);
 	})	
 })
 app.post('/admindetails/updateDetails', function(req, res){
 	console.log('Update Details -> admin');
 	console.log(req.body);
-	dbAdminDetails.admindetails.update({'user_name':req.body.user_name}, {$set:req.body}, function(err, doc){
-		res.json(doc);
+	dbAdminDetails.admindetails.update({'email':req.body.email}, {$set:req.body}, function(err, doc){
+		res.json(req.body);
 	})	
 })
 
+app.post('/schedules/insert',function(req,res){
+	console.log('Schedules - Insert')
+	console.log(req.body);
+	dbSchedules.schedules.insert(req.body,function(err,doc){
+		res.json(doc);
+	});
+})
+
+app.post('/schedules/futureAppointment',function(req,res){
+	console.log('Schedules - Future')
+	console.log(req.body);
+	dbSchedules.schedules.insert(req.body,function(err,doc){
+		res.json(doc);
+	});
+})
+
+app.post('/schedules/pastAppointment',function(req,res){
+	console.log('Schedules - Past')
+	console.log(req.body);
+	dbSchedules.schedules.insert(req.body,function(err,doc){
+		res.json(doc);
+	});
+})
 
 
 app.listen(3008);
