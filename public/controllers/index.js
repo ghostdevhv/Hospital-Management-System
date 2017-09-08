@@ -1,5 +1,5 @@
 //  Build our app module, with a dependency on the angular modal service.
-var app = angular.module('index', ['angularModalService', 'ngAnimate']);
+var app = angular.module('index', ['angularModalService', 'ngAnimate','LocalStorageModule','720kb.datepicker']);
 app.controller('index_controller', ['$scope', 'ModalService', function($scope, ModalService) {
 
     $scope.myLogin = function() {

@@ -12,46 +12,44 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label style="font-weight:lighter; font-size: 13px;">Patient Name</label>
-                                        <input type="text" class="form-control" placeholder="e.g. Himanshu Verma" ng-model="patient_name">
+                                        <label style="font-weight:lighter; font-size: 13px;">PATIENT NAME</label>
+                                        <input type="text" class="form-control" value="{{patient_name}}" ng-model="patient_name" readonly="readonly">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label style="font-weight:lighter; font-size: 13px;">Appointment Date</label>
-                                        <input type="text" class="form-control" placeholder="" ng-model="appointment_date">
+                                        <label style="font-weight:lighter; font-size: 13px;">EMAIL ID</label>
+                                        <input type="text" class="form-control" value="{{email}}" ng-model="email" readonly="readonly">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label style="font-weight:lighter; font-size: 13px;">PHONE NUMBER</label>
-                                        <input type="text" class="form-control" value="phone" ng-model="phone">
+                                        <label style="font-weight:lighter; font-size: 13px;">DATE OF APPOINTMENT</label>
+                                       <datepicker button-prev="<i class='fa fa-arrow-left'></i>" button-next="<i class='fa fa-arrow-right'></i>" date-disabled-weekdays="[0,6]" date-min-limit="{{minDate}}" date-format="yyyy-MM-dd"><input ng-model="date" class="myDatePicker" type="text"/></datepicker>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label style="font-weight:lighter; font-size: 13px;">EMAIL-ID</label>
-                                        <input type="text" class="form-control" value={{email}} readonly="readonly" ng-model="email">
+                                             <label style="font-weight:lighter; font-size: 13px;">TYPE OF DOCTOR</label>
+                                            <select class="form-control" name="doctorType" ng-model="doctorType">
+                                            <option value="" selected disabled>Select the type of doctor</option>
+                                            <option ng-repeat="x in typeDoctor">{{ x }}</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
                              <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="form-group">
-                                        <label style="font-weight:lighter; font-size: 13px;">ADDRESS</label>
-                                        <input type="text" class="form-control" value={{address}} ng-model="address">
-                                    </div>
+                                        <label style="font-weight:lighter; font-size: 13px;">REMARKS</label>
+                                        <textarea rows="3" class="form-control" placeholder="Short description of the problem" ng-model="description"></textarea>
                                 </div>
-                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label style="font-weight:lighter; font-size: 13px;">GENDER</label>
-                                        <input type="text" class="form-control" value={{gender}} ng-model="gender" readonly="readonly">
-                                    </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-info btn-fill" ng-click="update()"  style="display:block;margin: 0 auto;">Update Profile </button>
+
+                            <button type="submit" class="btn btn-info btn-fill" ng-click="schedule()"  style="display:block;margin: 0 auto; width: 20%;">Schedule </button>
                             <div class="clearfix"></div>
                         </div>
                     </form>

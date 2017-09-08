@@ -10,6 +10,22 @@
                     <form>
                         <div class="animate-show-hide">
                             <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <p style="margin-left: 72%; margin-top: 7px;">I am a</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <select class="form-control" placeholder="Designation" name="designation" ng-model="designation">
+                                            <option value="" selected disabled>Select your Designation</option>
+                                            <option ng-repeat="x in occupation">{{ x }}</option>
+                                        </select>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label style="font-weight:lighter; font-size: 13px;">FIRST NAME</label>
@@ -18,18 +34,13 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label style="font-weight:lighter; font-size: 13px;">LASTNAME</label>
+                                        <label style="font-weight:lighter; font-size: 13px;">LAST NAME</label>
                                         <input type="text" class="form-control" placeholder="e.g. Verma" ng-model="lastname">
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label style="font-weight:lighter; font-size: 13px;">USERNAME</label>
-                                        <input type="text" class="form-control" placeholder="e.g. shadeslayer" ng-model="username">
-                                    </div>
-                                </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label style="font-weight:lighter; font-size: 13px;">PASSWORD</label>
@@ -39,24 +50,14 @@
                                         </small>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label style="font-weight:lighter; font-size: 13px;">DESIGNATION</label>
-                                        <select class="form-control" placeholder="Designation" name="designation" ng-model="designation">
-                                            <option value="" selected disabled>Select your Designation</option>
-                                            <option ng-repeat="x in occupation">{{ x }}</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
+                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label style="font-weight:lighter; font-size: 13px;">PHONE NUMBER</label>
                                         <input type="text" class="form-control" placeholder="e.g. XXXXXX" ng-model="phone">
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -67,24 +68,43 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label style="font-weight:lighter; font-size: 13px;">DATE OF BIRTH</label>
-                                        <input type="text" class="form-control" placeholder="dd/mm/yyyy" ng-model="dateofbirth">
+                                        <datepicker button-prev="<i class='fa fa-arrow-left'></i>" button-next="<i class='fa fa-arrow-right'></i>" date-format="yyyy-MM-dd"><input ng-model="dateofbirth" class="myDatePicker" type="text"/></datepicker>
                                     </div>
                                 </div>
                             </div>
-                             <div class="row">
+
+                            <div class="row">
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label style="font-weight:lighter; font-size: 13px;">ADDRESS</label>
-                                        <input type="text" class="form-control" placeholder="e.g. A-210 LBS Hall of Residence" ng-model="address">
-                                    </div>
-                                </div>
-                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label style="font-weight:lighter; font-size: 13px;">GENDER</label>
                                         <select class="form-control" placeholder="Gender" name="gender" ng-model="gender">
                                             <option value="" selected disabled>Gender</option>
                                             <option ng-repeat="x in _gender">{{ x }}</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" ng-show="designation!='Doctor'">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">ADDRESS</label>
+                                        <input type="text" class="form-control" placeholder="e.g. A-210 LBS Hall of Residence" ng-model="address">
+                                    </div>
+                                </div>
+                                <div class="col-md-6" ng-show="designation=='Doctor'">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">Specialisation</label>
+                                        <select class="form-control" name="specialisation" ng-model="specialisation">
+                                            <option value="" selected disabled>Specialisation</option>
+                                            <option ng-repeat="x in _occupation">{{ x }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" ng-show="designation=='Doctor'">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label style="font-weight:lighter; font-size: 13px;">ADDRESS</label>
+                                        <input type="text" class="form-control" placeholder="e.g. A-210 LBS Hall of Residence" ng-model="address">
                                     </div>
                                 </div>
                             </div>

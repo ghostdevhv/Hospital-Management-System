@@ -10,3 +10,10 @@
 	left: 75%;
 	right: 0;
 }
+.myDatePicker{
+	-moz-border-radius: 5px;
+ 	border-radius: 5px;
+    border:1px solid #d3d3d3;
+    padding:9px;
+	width: 100%;
+}
