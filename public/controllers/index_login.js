@@ -38,6 +38,7 @@ app.controller('modalController', ['$scope', '$element', 'title', 'close','$wind
                         localStorageService.set("emailID", response.data.email);
                         localStorageService.set("firstName", response.data.first_name);
                         localStorageService.set("lastName", response.data.last_name);
+                        localStorageService.set("type", "Doctor");
                         $window.location.href = url+"?type=doctor";
                         $element.modal('hide')
                     }
@@ -61,6 +62,7 @@ app.controller('modalController', ['$scope', '$element', 'title', 'close','$wind
                         localStorageService.set("emailID", response.data.email);
                         localStorageService.set("firstName", response.data.first_name);
                         localStorageService.set("lastName", response.data.last_name);
+                        localStorageService.set("type", "Nurse");
                         $window.location.href = url+"?type=nurse";
                         $element.modal('hide')
                     }
@@ -85,6 +87,7 @@ app.controller('modalController', ['$scope', '$element', 'title', 'close','$wind
                         localStorageService.set("emailID", response.data.email);
                         localStorageService.set("firstName", response.data.first_name);
                         localStorageService.set("lastName", response.data.last_name);
+                        localStorageService.set("type", "Patient");
                         $window.location.href = url+"?type=patient";
                         $element.modal('hide')
                     }
@@ -108,6 +111,7 @@ app.controller('modalController', ['$scope', '$element', 'title', 'close','$wind
                         localStorageService.set("emailID", response.data.email);
                         localStorageService.set("firstName", response.data.first_name);
                         localStorageService.set("lastName", response.data.last_name);
+                        localStorageService.set("type", "Admin");
                         $window.location.href = url+"?type=admin";
                         $element.modal('hide')
                     }

@@ -3,12 +3,10 @@ app.controller('patient_controller', ['$scope','$window','$http','$location', 'M
     function($scope, $window, $http, $location, ModalService, localStorageService) {
 
         var email = localStorageService.get("emailID");
+        var type = localStorageService.get("type");
 
         $scope.init = function(){
-            if(email == null){
-                $window.location.href="/index.html";
-            }
-            else{
+            if(email != null && type=="Patient"){
                 var dataObj = {
                     email: email,
                 };
@@ -74,6 +72,9 @@ app.controller('patient_controller', ['$scope','$window','$http','$location', 'M
                     console.log("failure");
                 });
             }
+            else{
+                $window.location.href="/index.html";
+            }
         }
         
         $scope.convert_date = function($date){
@@ -87,8 +88,8 @@ app.controller('patient_controller', ['$scope','$window','$http','$location', 'M
 
         $scope.edit = function(){
             ModalService.showModal({
-            templateUrl: "modals/update_modal.html",
-            controller: "updatemodalController",
+            templateUrl: "modals/updatePatient.html",
+            controller: "updatePatientController",
             inputs: {
                 title: "Update your Profile",
                 phone: $scope.phone,
