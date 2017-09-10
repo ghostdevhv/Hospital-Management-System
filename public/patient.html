@@ -36,7 +36,7 @@
     <script src="js/light-bootstrap-dashboard.js"></script>
     <script type="text/javascript" src="js/angular-datepicker.js"></script>
     <script type="text/javascript" src="controllers/patient.js"></script>
-    <script type="text/javascript" src="controllers/update_profile.js"></script>
+    <script type="text/javascript" src="controllers/update_patient.js"></script>
     <script type="text/javascript" src="controllers/schedule_appointment.js"></script>
 
 </head>
@@ -86,12 +86,6 @@
         <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
                 <div class="navbar-header">
-           <!--          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button> -->
                     <h2 class="navbar-brand" style="font-size: 20px;">Welcome</h3>
                     <p class="navbar-brand" style="font-size: 17px;">{{first_name}}</p>
                 </div>
@@ -123,27 +117,16 @@
             </div>
         </nav>
 
-         <button id="accountContent1" type="submit" class="btn btn-info btn-fill" ng-click="edit()" style="display:block;margin: 0 auto; margin-top:2%; width: 20%; margin-right: 5%;"> Edit Profile </button>
-
         <div class="content" id="accountContent">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <img src="img/user-default.png" class="img-responsive" style="">
-                            </div>
-                            <div class="content">
-                                <h3 style="text-align: center;">{{first_name}} {{last_name}}</h3>
-                                <!-- <p style="text-align: center; margin-top: -3%;">{{specialisation}}</p> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-8">
-                        <div class="card">
-                            <div class="header">
-                                <h4 class="title">About Me</h4>
+                                <img src="img/face-2.jpg" class="img-responsive">
+                                <button type="submit" class="btn btn-info" ng-click="edit()" style="width: 15%;"> Edit Profile </button>
+                                <h3 style="text-align: center; margin-top: -1%;">{{first_name}} {{last_name}}</h3>
+                                <p style="text-align: center;">{{specialisation}}</p>
                                 <hr>
                             </div>
                             <div class="content">
@@ -159,7 +142,7 @@
 
                                         <span class="fa fa-intersex" style="font-size: 150%; font-weight: bolder;"></span>
                                         <span style="font-size: 130%; font-weight: bolder; margin-left: 3%;">Gender</span>
-                                        <p style="margin-left: 1%; font-weight: lighter; margin-bottom: 5%;">{{gender}}</p>  
+                                        <p style="margin-left: 1%; font-weight: lighter;">{{gender}}</p>  
                                     </div>
 
                                     <div class="col-md-5">
@@ -173,7 +156,7 @@
 
                                          <span class="fa fa-cog" style="font-size: 150%; font-weight: bolder;"></span>
                                         <span style="font-size: 130%; font-weight: bolder; margin-left: 1%;">Designation</span>
-                                        <p style="margin-left: 1%; font-weight: lighter; margin-bottom: 5%;">{{designation}}</p>
+                                        <p style="margin-left: 1%; font-weight: lighter;">{{designation}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +166,7 @@
             </div>
         </div>
 
-         <button id="appointmentContent1" type="submit" class="btn btn-info btn-fill" ng-click="schedule()" style="display:block;margin: 0 auto; margin-top:2%; width: 20%; text-align: center;"> Schedule an Appointment </button>
+        <button id="appointmentContent1" type="submit" class="btn btn-info btn-fill" ng-click="schedule()" style="display:block;margin: 0 auto; margin-top:2%; width: 20%; text-align: center;"> Schedule an Appointment </button>
 
         <div class="content" id="appointmentContent">
             <div class="container-fluid">
@@ -316,7 +299,6 @@
             $('#appointmentDetails').removeClass('active');
             $('#reportDetails').removeClass('active');
             $('#accountContent').fadeIn(300);
-            $('#accountContent1').fadeIn(300);
             $('#appointmentContent').fadeOut(0);
             $('#appointmentContent1').fadeOut(0);
             $('#reportContent').fadeOut(0);
@@ -327,7 +309,6 @@
             $('#appointmentDetails').addClass('active');
             $('#reportDetails').removeClass('active');
             $('#accountContent').fadeOut(0);
-            $('#accountContent1').fadeOut(0);
             $('#appointmentContent').fadeIn(300);
             $('#appointmentContent1').fadeIn(300);
             $('#reportContent').fadeOut(0);
@@ -338,7 +319,6 @@
             $('#appointmentDetails').removeClass('active');
             $('#reportDetails').addClass('active');
             $('#accountContent').fadeOut(0);
-            $('#accountContent1').fadeOut(0);
             $('#appointmentContent').fadeOut(0);
             $('#appointmentContent1').fadeOut(0);
             $('#reportContent').fadeIn(0);
