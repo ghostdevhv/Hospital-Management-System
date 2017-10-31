@@ -1,2 +1,2 @@
 # Hospital-Management-System
-Part of my Design Laboratory
+Work of my Design Laboratory
